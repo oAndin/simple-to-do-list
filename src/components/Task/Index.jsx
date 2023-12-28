@@ -1,9 +1,11 @@
-const Task = () => {
+/* eslint-disable react/prop-types */
+const Task = ({ task, onDelete }) => {
   return (
     <>
       <li>
-        <p>Texto da Tarefa</p>
-        <button>Remover Tarefa</button>
+        <p>{task.nome}</p>
+        <button
+          onClick={onDelete}>Remover Tarefa</button>
       </li>
     </>
   )
