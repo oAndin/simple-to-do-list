@@ -2,7 +2,7 @@ const Task = () => {
   return (
     <>
       <li>
-        <span>Texto da Tarefa</span>
+        <p>Texto da Tarefa</p>
         <button>Remover Tarefa</button>
       </li>
     </>
