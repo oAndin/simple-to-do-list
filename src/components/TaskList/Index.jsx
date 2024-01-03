@@ -12,7 +12,7 @@ const TaskList = ({ tasks, onDeleteTask, onToggleTaskDone }) => {
             onDelete={() => onDeleteTask(task.id)}
             onToggleDone={() => onToggleTaskDone(task.id)}
           />
-        ))};
+        ))}
     </ul>
   );
 };
