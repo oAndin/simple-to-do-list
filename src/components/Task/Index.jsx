@@ -1,9 +1,13 @@
 /* eslint-disable react/prop-types */
-const Task = ({ task, onDelete }) => {
+const Task = ({ task, onDelete, onToggleDone }) => {
   return (
     <>
       <li>
-        <p>{task.nome}</p>
+        <p
+          style={{ textDecoration: task.status ? "line-through" : "none" }}
+          onClick={onToggleDone}>
+          {task.nome}
+        </p>
         <button
           onClick={onDelete}>Remover Tarefa</button>
       </li>
