@@ -19,6 +19,7 @@ const Taskinput = ({ onAddTask }) => {
         <input
           type="text"
           placeholder="Adicione uma nova tarefa"
+          required
           value={input}
           onChange={(e) => setInput(e.target.value)} />
         <button type="submit">Adicionar</button>
