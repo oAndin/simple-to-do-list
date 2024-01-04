@@ -37,12 +37,15 @@ li {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #ffffff;
 
   & p {
     display: flex;
     align-items: center;
     cursor: pointer;
+    border: 1px solid #000;
+    max-width: 50%;
+    text-align: center;
   }
 
   & button {
@@ -60,6 +63,7 @@ li {
 }
 
 form {
+  justify-content: center;
   display: flex;
   padding: 0.3rem;
   margin: 1rem 0 1rem 0;

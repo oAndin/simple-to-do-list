@@ -10,11 +10,7 @@ const App = () => {
   }, [tasks]);
 
   const addTask = (task) => {
-
-    // id / nome / status
     setTasks([...tasks, { id: Date.now(), nome: task, status: false }])
-
-    // localstorage
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
 
@@ -28,8 +24,6 @@ const App = () => {
 
   return (
     <>
-
-
       <h1>Lista de tarefa</h1>
       <Taskinput onAddTask={addTask} />
       <TaskList
