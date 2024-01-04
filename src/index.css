@@ -42,6 +42,7 @@ li {
   & p {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   & button {
